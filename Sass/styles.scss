@@ -19,22 +19,30 @@ $bg_color: #f6f6f6;
 
 h1,
 h2 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 2.8rem;
 }
 p {
   font-family: "Roboto", arial, sans-serif;
+  font-size: 1.8rem;
 }
 
 .icon {
   width: 1.5rem;
 }
 
+/****************************************************
+*****************************************************
+*********************** ACCUEIL *********************
+*****************************************************
+*****************************************************/
+
 /*********************** HEADER **********************/
 
 .header {
   .header__left {
     width: 16.3rem;
-    margin: 2rem auto;
+    margin: 2.5rem auto 1.5rem auto;
   }
   .header__logo {
     width: 100%;
@@ -43,12 +51,13 @@ p {
 .search {
   display: flex;
   justify-content: center;
-  margin: 0.5rem auto;
+  margin: 0 auto;
   padding: 1.5rem;
   background-color: #eaeaea;
+  box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.25) inset;
 }
 .search__icon {
-  margin: 0 1.5rem 0 0;
+  margin: 0 1rem 0 0;
 }
 .search__place {
   width: 15rem;
@@ -67,5 +76,73 @@ p {
       opacity: 1;
       font-size: 1.8rem;
     }
+  }
+}
+
+/*********************** SECTION: VALUE **********************/
+
+.value {
+  background-color: $bg_color;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .value__title {
+    text-align: center;
+    margin: 2rem;
+  }
+  .value__info {
+    margin: 0 2.5rem 2rem 2.5rem;
+    text-align: center;
+    color: gray;
+  }
+}
+.btn {
+  background-color: $primary;
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  margin: 1rem 0 3rem 0;
+  align-content: center;
+  border-radius: 20rem;
+  border-style: none;
+  font-size: 2rem;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+/*********************** SECTION: OPERATION **********************/
+
+.op__wrapper {
+  margin: 3rem 2rem;
+}
+.op__card {
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: $bg_color;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 1.5rem;
+  .op__number {
+    background-color: $primary;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.6rem;
+  }
+  .op__icon {
+    background-image: url;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.op__card:hover {
+  background-color: rgba(147, 86, 220, 0.25);
+  .op__icon:hover {
+    background-image: url(images/Icones/mobile-alt-solid-purple.png);
   }
 }
