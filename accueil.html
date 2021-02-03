@@ -13,11 +13,11 @@
 <body>
     <header class="header">
         <p class="header__left">
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood logo" class="header__logo">
+            <img src="Sass/images/logo/ohmyfood.png" alt="ohmyfood logo" class="header__logo">
         </p>  
         <div class="search">
             <p class="search__icon">
-                <img src="images/Icones/map-marker-alt-solid.svg" alt="#" class="icon">
+                <img src="Sass/images/Icones/map-marker-alt-solid.svg" alt="#" class="icon">
             </p>
             <label for="district" class="search__place">
                 <input type="search" placeholder="Paris, Belleville" id="district">
@@ -30,15 +30,32 @@
         <button class="btn" type="submit" value="submit" formtarget="_blank">Explorer nos restaurants</button>
     </section>
     <section class="op">
-        <div class="op__wrapper">
+        <div class="op__margin">
             <h1>Fonctionnement</h1>
-            <div class="op__card">
-                <p class="op__number">1</p>
-                <p class="op__icon icon"></p>
-                <p class="op__info">Choisissez un restaurant</p>
+            <div class="op__container">
+                <div class="op__card op__card__1">
+                    <p class="op__number">1</p>
+                    <div class="op__card__icon op__card__icon__1"></div>
+                    <p class="op__card__title">Choisissez un restaurant</p>
+                </div>
+            </div>
+            <div class="op__container">
+                <div class="op__card op__card__2">
+                    <p class="op__number">2</p>
+                    <div class="op__card__icon op__card__icon__2"></div>
+                    <p class="op__card__title">Composez votre menu</p>
+                </div>
+            </div>
+            <div class="op__container">
+                <div class="op__card op__card__3">
+                    <p class="op__number">3</p>
+                    <div class="op__card__icon op__card__icon__3"></div>
+                    <p class="op__card__title">Dégustez au restaurant</p>
+                </div>
             </div>
            
         </div>
+        <div class="op__card__icon icon"></div>
     </section>
     
 </body>
