@@ -111,10 +111,10 @@ p {
 
 /*********************** SECTION: OPERATION **********************/
 .op__margin {
-  margin: 3rem 2rem;
+  margin: 3rem 2rem 9rem 2rem;
 }
 .op__margin h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .op__container {
@@ -142,22 +142,125 @@ p {
   display: flex;
   align-items: center;
   margin-left: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .op__card:hover {
   background-color: rgba(147, 86, 220, 0.1);
 }
 .op__card .op__card__icon {
-  background-image: url("images/Icones/mobile-alt-solid-gray.png");
   background-size: 1.5rem;
   background-position: center;
   background-repeat: no-repeat;
   height: 3rem;
-  width: 1.5rem;
+  width: 2rem;
   margin: 0 2.5rem;
 }
+.op__card .op__card__icon__1 {
+  background-image: url("images/Icones/mobile-alt-solid-gray.png");
+}
+.op__card .op__card__icon__2 {
+  background-image: url("images/Icones/bars-solid-gray.png");
+}
+.op__card .op__card__icon__3 {
+  background-image: url("images/Icones/store-solid-gray.png");
+  background-size: 2rem;
+}
 
-.op__card:hover .op__card__icon {
+.op__card:hover .op__card__icon__1 {
   background-image: url("images/Icones/mobile-alt-solid-purple.png");
+}
+.op__card:hover .op__card__icon__2 {
+  background-image: url("images/Icones/bars-solid-purple.png");
+}
+.op__card:hover .op__card__icon__3 {
+  background-image: url("images/Icones/store-solid-purple.png");
+}
+
+/*********************** SECTION: RESTAURANT **********************/
+.resto__margin {
+  margin: 5rem 2rem;
+}
+.resto__margin h1 {
+  margin-bottom: 2rem;
+}
+
+.resto__card {
+  max-width: 43rem;
+  min-width: 28rem;
+  height: 25rem;
+  border-radius: 1.5rem;
+  position: relative;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.resto__card > * {
+  text-decoration: none;
+  color: initial;
+}
+.resto__card img {
+  width: 100%;
+  height: 17.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.resto__card .resto__card__badge {
+  color: #018765;
+  background-color: #98e2d0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.4rem;
+}
+.resto__card h1 {
+  font-size: 2rem;
+  margin: 1rem auto 0.5rem 1.5rem;
+}
+.resto__card .resto__card__lieu {
+  margin: 0 1.5rem;
+}
+.resto__card .resto__card__heart {
+  position: absolute;
+  background-image: url("images/Icones/heart-regular.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 3.1rem;
+  width: 2.7rem;
+  right: 3rem;
+  bottom: 2.5rem;
+}
+
+/*********************** FOOTER **********************/
+.footer {
+  background-color: #343434;
+  padding-bottom: 3rem;
+}
+
+.footer__container {
+  margin: 2rem 0 0 2rem;
+}
+.footer__container .footer__logo {
+  margin: 2.5rem 0;
+  width: 10rem;
+}
+.footer__container p {
+  color: #fff;
+  line-height: 2.4rem;
+}
+.footer__container .footer__icon {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1rem 1.5rem;
+  padding-left: 2rem;
+}
+
+.footer__icon__ustensils {
+  background-image: url("images/Icones/utensils-solid-white.png");
+}
+
+.footer__icon__hands {
+  background-image: url("images/Icones/hands-helping-solid-white.png");
 }
 
 /*# sourceMappingURL=style.css.map */
