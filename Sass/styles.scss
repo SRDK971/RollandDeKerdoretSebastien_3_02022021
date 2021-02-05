@@ -30,6 +30,14 @@ p {
 .icon {
   width: 1.5rem;
 }
+.heart__icon {
+  position: absolute;
+  background-image: url("images/Icones/heart-regular.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 3.1rem;
+  width: 2.7rem;
+}
 
 /****************************************************
 *****************************************************
@@ -37,15 +45,27 @@ p {
 *****************************************************
 *****************************************************/
 
-/*********************** HEADER **********************/
+/*********************** HEADER *********************/
 
 .header {
   .header__left {
     width: 16.3rem;
     margin: 2.5rem auto 1.5rem auto;
+    position: relative;
   }
   .header__logo {
     width: 100%;
+  }
+  .header__icon {
+    background-image: url("images/Icones/arrow-left-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.2rem;
   }
 }
 .search {
@@ -209,7 +229,7 @@ p {
   }
   .resto__card__badge {
     color: #018765;
-    background-color: #98e2d0;
+    background-color: $tertiary;
     padding: 1rem 1.5rem;
     border-radius: 0.2rem;
     position: absolute;
@@ -225,12 +245,6 @@ p {
     margin: 0 1.5rem;
   }
   .resto__card__heart {
-    position: absolute;
-    background-image: url("images/Icones/heart-regular.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 3.1rem;
-    width: 2.7rem;
     right: 3rem;
     bottom: 2.5rem;
   }
@@ -264,4 +278,83 @@ p {
 }
 .footer__icon__hands {
   background-image: url("images/Icones/hands-helping-solid-white.png");
+}
+
+/****************************************************
+*****************************************************
+*********************** RESTO PAGES *****************
+*****************************************************
+*****************************************************/
+
+.main__image {
+  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 25.5rem;
+}
+
+.menu {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-top: -8rem;
+  background-color: #fff;
+}
+.menu__container {
+  padding: 2rem 1.5rem;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+  }
+  .heart__icon {
+    position: relative;
+    margin-right: 2rem;
+  }
+}
+.menu__categories {
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 2rem 0 0.2rem 0.5rem;
+  }
+  .line {
+    border-bottom: 3px solid $tertiary;
+    display: block;
+    width: 4rem;
+    margin-left: 0.5rem;
+  }
+}
+.menu__card__container {
+  .menu__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+  }
+}
+.menu__card__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 7rem;
+  margin: 2rem 0;
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0 1rem;
+  }
+  .bold {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .menu__card__price {
+    align-self: flex-end;
+    margin: 0 2rem 1.4rem 0;
+  }
 }
