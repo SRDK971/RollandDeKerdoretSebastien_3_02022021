@@ -60,7 +60,8 @@ p {
   display: inline-block;
   position: absolute;
   top: 2.5rem;
-  left: 2.2rem;
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
 .search {
@@ -114,7 +115,7 @@ p {
 }
 
 .btn {
-  background-color: #9356dc;
+  background: linear-gradient(to top left, #9356dc, #ff79da);
   color: #fff;
   padding: 1.5rem 2.5rem;
   margin: 1rem 0 3rem 0;
@@ -124,10 +125,28 @@ p {
   font-size: 2rem;
   cursor: pointer;
   outline: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  transform: opacity;
 }
-.btn:hover {
-  scale: 1.05;
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top left, #965add, #ff88de);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  color: #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms;
+  border-radius: 20rem;
 }
 
 /*********************** SECTION: OPERATION **********************/
@@ -245,6 +264,9 @@ p {
   right: 3rem;
   bottom: 2.5rem;
 }
+.resto__card .resto__card__heart:hover {
+  background-image: linear-gradient(#9356dc, #ff79da);
+}
 
 /*********************** FOOTER **********************/
 .footer {
@@ -330,9 +352,18 @@ p {
   margin-left: 0.5rem;
 }
 
-.menu__card__container .menu__card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+.menu__card {
+  box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
   border-radius: 1.5rem;
+  display: flex;
+  height: 7rem;
+  width: 100%;
+  transition: transform 5s;
+  margin: 2rem 0;
+}
+.menu__card:hover .menu__card__right {
+  width: 20%;
+  transition: transform 5s;
 }
 
 .menu__card__left {
@@ -340,8 +371,7 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 7rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .menu__card__left p {
   font-size: 1.5rem;
@@ -354,7 +384,15 @@ p {
 }
 .menu__card__left .menu__card__price {
   align-self: flex-end;
-  margin: 0 2rem 1.4rem 0;
+  margin: 0 2rem 0.4rem 0;
+}
+
+.menu__card__right {
+  background-color: #99e2d0;
+  width: 0;
+  height: 100%;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
