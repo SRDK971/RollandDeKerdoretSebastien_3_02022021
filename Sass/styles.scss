@@ -1,15 +1,15 @@
 /*********************** GENERAL **********************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Shrikhand", cursive;
-  font-family: "Roboto", arial, sans-serif;
-  font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Shrikhand", cursive;
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 10px;
 }
 body {
-  max-width: 1920px;
-  margin: 0 auto;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 $primary: #9356dc;
@@ -19,24 +19,24 @@ $bg_color: #f6f6f6;
 
 h1,
 h2 {
-  font-family: "Roboto", arial, sans-serif;
-  font-size: 2.8rem;
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 2.8rem;
 }
 p {
-  font-family: "Roboto", arial, sans-serif;
-  font-size: 1.8rem;
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 1.8rem;
 }
 
 .icon {
-  width: 1.5rem;
+    width: 1.5rem;
 }
 .heart__icon {
-  position: absolute;
-  background-image: url("images/Icones/heart-regular.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 3.1rem;
-  width: 2.7rem;
+    position: absolute;
+    background-image: url("images/Icones/heart-regular.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 3.1rem;
+    width: 2.7rem;
 }
 
 /****************************************************
@@ -48,264 +48,354 @@ p {
 /*********************** HEADER *********************/
 
 .header {
-  .header__left {
-    width: 16.3rem;
-    margin: 2.5rem auto 1.5rem auto;
-    position: relative;
-  }
-  .header__logo {
-    width: 100%;
-  }
-  .header__icon {
-    background-image: url("images/Icones/arrow-left-solid.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: inline-block;
-    position: absolute;
-    top: 2.5rem;
-    margin-right: auto;
-    margin-left: 2rem;
-  }
+    .header__left {
+        width: 16.3rem;
+        margin: 2.5rem auto 1.5rem auto;
+        position: relative;
+    }
+    .header__logo {
+        width: 100%;
+    }
+    .header__icon {
+        background-image: url("images/Icones/arrow-left-solid.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-block;
+        position: absolute;
+        top: 2.5rem;
+        margin-right: auto;
+        margin-left: 2rem;
+    }
 }
 .search {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 1.5rem;
-  background-color: #eaeaea;
-  box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.25) inset;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #eaeaea;
+    box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.25) inset;
 }
 .search__icon {
-  margin: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
 }
 .search__place {
-  width: 15rem;
-  display: inline-flex;
-  justify-content: center;
-  input {
-    outline: none;
-    border: none;
-    height: 100%;
     width: 15rem;
-    margin: 0 auto;
-    background-color: #eaeaea;
+    display: inline-flex;
+    justify-content: center;
+    input {
+        outline: none;
+        border: none;
+        height: 100%;
+        width: 15rem;
+        margin: 0 auto;
+        background-color: #eaeaea;
 
-    &::placeholder {
-      color: #111;
-      opacity: 1;
-      font-size: 1.8rem;
+        &::placeholder {
+            color: #111;
+            opacity: 1;
+            font-size: 1.8rem;
+        }
     }
-  }
 }
 
 /*********************** SECTION: VALUE **********************/
 
 .value {
-  background-color: $bg_color;
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .value__title {
-    text-align: center;
-    margin: 2rem;
-  }
-  .value__info {
-    margin: 0 2.5rem 2rem 2.5rem;
-    text-align: center;
-    color: gray;
-  }
+    background-color: $bg_color;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .value__title {
+        text-align: center;
+        margin: 2rem;
+    }
+    .value__info {
+        margin: 0 2.5rem 2rem 2.5rem;
+        text-align: center;
+        color: gray;
+    }
 }
 .btn {
-  background: linear-gradient(to top left, $primary, $secondary);
-  color: #fff;
-  padding: 1.5rem 2.5rem;
-  margin: 1rem 0 3rem 0;
-  align-content: center;
-  border-radius: 20rem;
-  border-style: none;
-  font-size: 2rem;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
-  transform: opacity;
-  &:hover {
-    &::after {
-      opacity: 1;
-    }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(
-      to top left,
-      lighten($primary, 1),
-      lighten($secondary, 3)
-    );
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to top left, $primary, $secondary);
     color: #fff;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 100ms;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem 0 3rem 0;
+    align-content: center;
     border-radius: 20rem;
-  }
+    border-style: none;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    transform: opacity;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            to top left,
+            lighten($primary, 1),
+            lighten($secondary, 3)
+        );
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        color: #fff;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 100ms;
+        border-radius: 20rem;
+    }
 }
 
 /*********************** SECTION: OPERATION **********************/
 
 .op__margin {
-  margin: 3rem 2rem 9rem 2rem;
-  h1 {
-    margin-bottom: 4rem;
-  }
+    margin: 3rem 2rem 9rem 2rem;
+    h1 {
+        margin-bottom: 4rem;
+    }
 }
 .op__container {
-  display: flex;
-  align-items: center;
-  margin-top: 2.5rem;
-  .op__number {
-    box-sizing: content-box;
-    background-color: $primary;
-    border-radius: 50%;
-    color: #fff;
-    width: 2.5rem;
-    height: 2.5rem;
-    text-align: center;
-    margin-left: -15px;
-    padding: 5px 3px 0 3px;
-  }
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    .op__number {
+        box-sizing: content-box;
+        background-color: $primary;
+        border-radius: 50%;
+        color: #fff;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        margin-left: -15px;
+        padding: 5px 3px 0 3px;
+    }
 }
 .op__card {
-  background-color: $bg_color;
-  border-radius: 2rem;
-  height: 7rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  &:hover {
-    background-color: rgba(147, 86, 220, 0.1);
-  }
-  .op__card__icon {
-    background-size: 1.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 3rem;
-    width: 2rem;
-    margin: 0 2.5rem;
-  }
-  .op__card__icon__1 {
-    background-image: url("images/Icones/mobile-alt-solid-gray.png");
-  }
-  .op__card__icon__2 {
-    background-image: url("images/Icones/bars-solid-gray.png");
-  }
-  .op__card__icon__3 {
-    background-image: url("images/Icones/store-solid-gray.png");
-    background-size: 2rem;
-  }
+    background-color: $bg_color;
+    border-radius: 2rem;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+        background-color: rgba(147, 86, 220, 0.1);
+    }
+    .op__card__icon {
+        background-size: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 3rem;
+        width: 2rem;
+        margin: 0 2.5rem;
+    }
+    .op__card__icon__1 {
+        background-image: url("images/Icones/mobile-alt-solid-gray.png");
+    }
+    .op__card__icon__2 {
+        background-image: url("images/Icones/bars-solid-gray.png");
+    }
+    .op__card__icon__3 {
+        background-image: url("images/Icones/store-solid-gray.png");
+        background-size: 2rem;
+    }
 }
 .op__card:hover {
-  .op__card__icon__1 {
-    background-image: url("images/Icones/mobile-alt-solid-purple.png");
-  }
-  .op__card__icon__2 {
-    background-image: url("images/Icones/bars-solid-purple.png");
-  }
-  .op__card__icon__3 {
-    background-image: url("images/Icones/store-solid-purple.png");
-  }
+    .op__card__icon__1 {
+        background-image: url("images/Icones/mobile-alt-solid-purple.png");
+    }
+    .op__card__icon__2 {
+        background-image: url("images/Icones/bars-solid-purple.png");
+    }
+    .op__card__icon__3 {
+        background-image: url("images/Icones/store-solid-purple.png");
+    }
 }
 
 /*********************** SECTION: RESTAURANT **********************/
 
 .resto__margin {
-  margin: 5rem 2rem;
-  h1 {
-    margin-bottom: 2rem;
-  }
+    margin: 5rem 2rem;
+    h1 {
+        margin-bottom: 2rem;
+    }
 }
 .resto__card {
-  max-width: 43rem;
-  min-width: 28rem;
-  height: 25rem;
-  border-radius: 1.5rem;
-  position: relative;
-  margin: 2rem 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  & > * {
-    text-decoration: none;
-    color: initial;
-  }
-  img {
-    width: 100%;
-    height: 17.5rem;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-  }
-  .resto__card__badge {
-    color: #018765;
-    background-color: $tertiary;
-    padding: 1rem 1.5rem;
-    border-radius: 0.2rem;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 1.4rem;
-  }
-  h1 {
-    font-size: 2rem;
-    margin: 1rem auto 0.5rem 1.5rem;
-  }
-  .resto__card__lieu {
-    margin: 0 1.5rem;
-  }
-  .resto__card__heart {
-    right: 3rem;
-    bottom: 2.5rem;
-    &:hover {
-      background-image: linear-gradient($primary, $secondary);
+    max-width: 43rem;
+    min-width: 28rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    position: relative;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    & > * {
+        text-decoration: none;
+        color: initial;
+        display: block;
+        width: 100%;
+        height: 100%;
     }
-  }
+    img {
+        width: 100%;
+        height: 17.5rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+    .resto__card__badge {
+        color: #018765;
+        background-color: $tertiary;
+        padding: 1rem 1.5rem;
+        border-radius: 0.2rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 1rem auto 0.5rem 1.5rem;
+    }
+    .resto__card__lieu {
+        margin: 0 1.5rem;
+    }
+    .resto__card__heart {
+        right: 3rem;
+        bottom: 2.5rem;
+        z-index: 0;
+        position: absolute;
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: "";
+            opacity: 0;
+            z-index: 1;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(to top left, $primary, $secondary);
+            transform: scaleY(0.5);
+            transform-origin: bottom;
+        }
+    }
+}
+/****************** Loading spinner ******************/
+
+$num-letters: 8;
+$anim-dur: 1400ms;
+$anim-delay: $anim-dur / $num-letters;
+
+.load-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $primary;
+    z-index: 999;
+    animation: loader 100ms 3s both;
+}
+@keyframes loader {
+    0% {
+        transform: translateX(0);
+        opacity: (1);
+    }
+    70% {
+        opacity: (0);
+    }
+    100% {
+        transform: translateX(-99999px);
+    }
+}
+.load {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    span {
+        display: inline-block;
+        margin: 0 1px;
+        color: #fff;
+        font-family: "Shrikhand", cursive;
+        font-size: 100px;
+        @for $i from 0 through $num-letters {
+            &:nth-child(#{$i}) {
+                animation: opacity-text
+                    $anim-dur
+                    (#{$i/8}) +
+                    s
+                    infinite
+                    linear
+                    alternate
+                    both;
+            }
+        }
+    }
+}
+
+@keyframes opacity-text {
+    0% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(1);
+    }
 }
 
 /*********************** FOOTER **********************/
 .footer {
-  background-color: #343434;
-  padding-bottom: 3rem;
+    background-color: #343434;
+    padding-bottom: 3rem;
 }
 
 .footer__container {
-  margin: 2rem 0 0 2rem;
-  .footer__logo {
-    margin: 2.5rem 0;
-    width: 10rem;
-  }
-  p {
-    color: #fff;
-    line-height: 2.4rem;
-  }
-  .footer__icon {
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1rem 1.5rem;
-    padding-left: 2rem;
-  }
+    margin: 2rem 0 0 2rem;
+    .footer__logo {
+        margin: 2.5rem 0;
+        width: 10rem;
+    }
+    p {
+        color: #fff;
+        line-height: 2.4rem;
+    }
+    .footer__icon {
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1rem 1.5rem;
+        padding-left: 2rem;
+    }
 }
 .footer__icon__ustensils {
-  background-image: url("images/Icones/utensils-solid-white.png");
+    background-image: url("images/Icones/utensils-solid-white.png");
 }
 .footer__icon__hands {
-  background-image: url("images/Icones/hands-helping-solid-white.png");
+    background-image: url("images/Icones/hands-helping-solid-white.png");
 }
 
 /****************************************************
@@ -315,91 +405,91 @@ p {
 *****************************************************/
 
 .main__image {
-  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 25.5rem;
+    background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 25.5rem;
 }
 
 .menu {
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-  margin-top: -8rem;
-  background-color: #fff;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    margin-top: -8rem;
+    background-color: #fff;
 }
 .menu__container {
-  padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 .menu__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  h1 {
-    font-family: "Shrikhand", cursive;
-    font-size: 2.4rem;
-    margin-left: 0.5rem;
-  }
-  .heart__icon {
-    position: relative;
-    margin-right: 2rem;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        font-family: "Shrikhand", cursive;
+        font-size: 2.4rem;
+        margin-left: 0.5rem;
+    }
+    .heart__icon {
+        position: relative;
+        margin-right: 2rem;
+    }
 }
 .menu__categories {
-  h2 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 2rem 0 0.2rem 0.5rem;
-  }
-  .line {
-    border-bottom: 3px solid $tertiary;
-    display: block;
-    width: 4rem;
-    margin-left: 0.5rem;
-  }
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 2rem 0 0.2rem 0.5rem;
+    }
+    .line {
+        border-bottom: 3px solid $tertiary;
+        display: block;
+        width: 4rem;
+        margin-left: 0.5rem;
+    }
 }
 
 .menu__card {
-  box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 1.5rem;
-  display: flex;
-  height: 7rem;
-  width: 100%;
-  transition: transform 5s;
-  margin: 2rem 0;
-  &:hover {
-    .menu__card__right {
-      width: 20%;
-      transition: transform 5s;
+    box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    display: flex;
+    height: 7rem;
+    width: 100%;
+    transition: transform 5s;
+    margin: 2rem 0;
+    &:hover {
+        .menu__card__right {
+            width: 20%;
+            transition: transform 5s;
+        }
     }
-  }
 }
 .menu__card__left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  //   height: 7rem;
-  margin: 1rem 0;
-  p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin: 0 1rem;
-  }
-  .bold {
-    font-size: 1.8rem;
-    font-weight: 600;
-  }
-  .menu__card__price {
-    align-self: flex-end;
-    margin: 0 2rem 0.4rem 0;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    //   height: 7rem;
+    margin: 1rem 0;
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0 1rem;
+    }
+    .bold {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .menu__card__price {
+        align-self: flex-end;
+        margin: 0 2rem 0.4rem 0;
+    }
 }
 .menu__card__right {
-  background-color: $tertiary;
-  width: 0;
-  height: 100%;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
+    background-color: $tertiary;
+    width: 0;
+    height: 100%;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
