@@ -30,14 +30,6 @@ p {
 .icon {
     width: 1.5rem;
 }
-.heart__icon {
-    position: absolute;
-    background-image: url("images/Icones/heart-regular.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 3.1rem;
-    width: 2.7rem;
-}
 
 /****************************************************
 *****************************************************
@@ -273,32 +265,45 @@ p {
         margin: 0 1.5rem;
     }
     .resto__card__heart {
-        right: 3rem;
-        bottom: 2.5rem;
-        z-index: 0;
         position: absolute;
+        height: 3.1rem;
+        width: 2.7rem;
+        right: 2.5rem;
+        bottom: 1.7rem;
         &:hover {
-            &::after {
-                opacity: 1;
+            .heart--empty {
+                opacity: 0;
             }
-        }
-        &::after {
-            content: "";
-            opacity: 0;
-            z-index: 1;
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background: linear-gradient(to top left, $primary, $secondary);
-            transform: scaleY(0.5);
-            transform-origin: bottom;
+            .heart--full {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     }
 }
+.heart--empty {
+    width: 25px;
+    height: 25px;
+    transition-property: opacity;
+    transition-duration: 1500ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+.heart--full {
+    font-size: 50px;
+    width: 25px;
+    height: 26px;
+    position: relative;
+    top: -2.8rem;
+    opacity: 0;
+    transform: scale(0.3);
+    transform-origin: bottom;
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-in;
+}
+
 /****************** Loading spinner ******************/
 
 $num-letters: 8;
@@ -311,7 +316,7 @@ $anim-delay: $anim-dur / $num-letters;
     left: 0;
     width: 100%;
     height: 100%;
-    background: $primary;
+    background: linear-gradient(#9356dc, #ff79da);
     z-index: 999;
     animation: loader 100ms 3s both;
 }
@@ -346,14 +351,7 @@ $anim-delay: $anim-dur / $num-letters;
         font-size: 100px;
         @for $i from 0 through $num-letters {
             &:nth-child(#{$i}) {
-                animation: opacity-text
-                    $anim-dur
-                    (#{$i/8}) +
-                    s
-                    infinite
-                    linear
-                    alternate
-                    both;
+                animation: opacity-text $anim-dur (#{$i/9}) + s 2 ease-in-out;
             }
         }
     }
@@ -432,8 +430,21 @@ $anim-delay: $anim-dur / $num-letters;
     }
     .heart__icon {
         position: relative;
-        margin-right: 2rem;
+        margin-right: 0rem;
+        &:hover {
+            .heart--empty {
+                opacity: 0;
+            }
+            .heart--full {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
     }
+}
+.heart__icon--full {
+    top: 0;
+    right: 2.75rem;
 }
 .menu__categories {
     h2 {
