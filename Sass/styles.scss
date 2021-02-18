@@ -111,10 +111,11 @@ p {
     }
 }
 .btn {
+    display: block;
     background: linear-gradient(to top left, $primary, $secondary);
     color: #fff;
     padding: 1.5rem 2.5rem;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem auto 3rem auto;
     align-content: center;
     border-radius: 20rem;
     border-style: none;
@@ -137,11 +138,7 @@ p {
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(
-            to top left,
-            lighten($primary, 1),
-            lighten($secondary, 3)
-        );
+        background: linear-gradient(to top left, lighten($primary, 1), lighten($secondary, 3));
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
         color: #fff;
         z-index: -1;
@@ -446,7 +443,8 @@ $anim-delay: $anim-dur / $num-letters;
     top: 0;
     right: 2.75rem;
 }
-.menu__categories {
+.menu__subcategories {
+    margin-bottom: 5rem;
     h2 {
         text-transform: uppercase;
         font-size: 1.5rem;
@@ -469,11 +467,35 @@ $anim-delay: $anim-dur / $num-letters;
     width: 100%;
     transition: transform 5s;
     margin: 2rem 0;
+    cursor: pointer;
+    position: relative;
     &:hover {
         .menu__card__right {
-            width: 20%;
-            transition: transform 5s;
+            width: 6rem;
         }
+        .fa-check-circle {
+            transform: rotate(1turn);
+        }
+    }
+}
+.menu__card__right {
+    height: 100%;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    transition-property: all;
+    transition-duration: 300ms;
+    background-color: $tertiary;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-check-circle {
+        color: #fff;
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: rotate(0turn);
+        transition: transform 1000ms;
     }
 }
 .menu__card__left {
@@ -481,7 +503,6 @@ $anim-delay: $anim-dur / $num-letters;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    //   height: 7rem;
     margin: 1rem 0;
     p {
         font-size: 1.5rem;
@@ -496,11 +517,4 @@ $anim-delay: $anim-dur / $num-letters;
         align-self: flex-end;
         margin: 0 2rem 0.4rem 0;
     }
-}
-.menu__card__right {
-    background-color: $tertiary;
-    width: 0;
-    height: 100%;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
 }

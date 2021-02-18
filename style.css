@@ -106,10 +106,11 @@ p {
 }
 
 .btn {
+  display: block;
   background: linear-gradient(to top left, #9356dc, #ff79da);
   color: #fff;
   padding: 1.5rem 2.5rem;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem auto 3rem auto;
   align-content: center;
   border-radius: 20rem;
   border-style: none;
@@ -455,13 +456,16 @@ p {
   right: 2.75rem;
 }
 
-.menu__categories h2 {
+.menu__subcategories {
+  margin-bottom: 5rem;
+}
+.menu__subcategories h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 300;
   margin: 2rem 0 0.2rem 0.5rem;
 }
-.menu__categories .line {
+.menu__subcategories .line {
   border-bottom: 3px solid #99e2d0;
   display: block;
   width: 4rem;
@@ -476,10 +480,35 @@ p {
   width: 100%;
   transition: transform 5s;
   margin: 2rem 0;
+  cursor: pointer;
+  position: relative;
 }
 .menu__card:hover .menu__card__right {
-  width: 20%;
-  transition: transform 5s;
+  width: 6rem;
+}
+.menu__card:hover .fa-check-circle {
+  transform: rotate(1turn);
+}
+
+.menu__card__right {
+  height: 100%;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  background-color: #99e2d0;
+  width: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__card__right .fa-check-circle {
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(0turn);
+  transition: transform 1000ms;
 }
 
 .menu__card__left {
@@ -501,14 +530,6 @@ p {
 .menu__card__left .menu__card__price {
   align-self: flex-end;
   margin: 0 2rem 0.4rem 0;
-}
-
-.menu__card__right {
-  background-color: #99e2d0;
-  width: 0;
-  height: 100%;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

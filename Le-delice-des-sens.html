@@ -9,25 +9,18 @@
             rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
         <title>Le délice des sens</title>
     </head>
     <body>
         <header class="header">
             <p class="header__left">
-                <img
-                    src="Sass/images/logo/ohmyfood.png"
-                    alt="ohmyfood logo"
-                    class="header__logo"
-                />
+                <img src="Sass/images/logo/ohmyfood.png" alt="ohmyfood logo" class="header__logo" />
             </p>
             <a href="accueil.html" class="header__icon"></a>
         </header>
-        <section class="main__image"></section>
+        <div class="main__image"></div>
         <section class="menu">
             <div class="menu__container">
                 <div class="menu__title">
@@ -83,24 +76,249 @@
                     </div>
                 </div>
                 <div class="menu__categories">
-                    <h2>entrées</h2>
-                    <span class="line"></span>
-                    <div class="menu__card__container">
-                        <div class="menu__card">
-                            <div class="menu__card__left">
-                                <p>
-                                    <span class="bold">Tartare de thon</span
-                                    ><br />Assaisonnée au yuzu
-                                </p>
-                                <p class="menu__card__price bold">25€</p>
+                    <div class="menu__subcategories">
+                        <h2>entrées</h2>
+                        <span class="line"></span>
+                        <div class="menu__card__container">
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Tartare de thon</span><br />Assaisonnée au yuzu</p>
+                                    <p class="menu__card__price bold">25€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="menu__card__right">
-                                <p class="icon__cochet"></p>
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p>
+                                        <span class="bold">Bouchée de homard croustillant</span><br />Et sa farandole de
+                                        petits légumes
+                                    </p>
+                                    <p class="menu__card__price bold">35€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Velouté de cèpes</span><br />Aux truffes</p>
+                                    <p class="menu__card__price bold">20€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__subcategories">
+                        <h2>plats</h2>
+                        <span class="line"></span>
+                        <div class="menu__card__container">
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p>
+                                        <span class="bold">Poulet rôti aux herbes de Provence</span><br />Et sa crème de
+                                        truffe
+                                    </p>
+                                    <p class="menu__card__price bold">40€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Langouste rôtie</span><br />Et ses légumes de saison</p>
+                                    <p class="menu__card__price bold">35€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Côte de boeuf Angus</span><br />Et sa purée de panais</p>
+                                    <p class="menu__card__price bold">44€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__subcategories">
+                        <h2>desserts</h2>
+                        <span class="line"></span>
+                        <div class="menu__card__container">
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Farandole de desserts</span><br />Du chef</p>
+                                    <p class="menu__card__price bold">18€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Crème brulée </span><br />Revisitée</p>
+                                    <p class="menu__card__price bold">22€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menu__card">
+                                <div class="menu__card__left">
+                                    <p><span class="bold">Tiramisu</span><br />À la noisette</p>
+                                    <p class="menu__card__price bold">23€</p>
+                                </div>
+                                <div class="menu__card__right">
+                                    <svg
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fas"
+                                        data-icon="check-circle"
+                                        class="svg-inline--fa fa-check-circle fa-w-16"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                                        ></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="btn" type="submit" value="submit" formtarget="_blank">Commander</button>
             </div>
         </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <img class="footer__logo" src="images/logo/ohmyfood-white-01.png" alt="logo ohmyfood" />
+                <p class="footer__icon footer__icon__ustensils">Proposer un restaurant</p>
+                <p class="footer__icon footer__icon__hands">Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <a href="mailto:contact@ohmyfood.fr"><p>Contact</p></a>
+            </div>
+        </footer>
     </body>
 </html>
