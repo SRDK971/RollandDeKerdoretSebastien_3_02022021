@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********************** GENERAL **********************/
 * {
   margin: 0;
@@ -411,11 +412,26 @@ p {
 *****************************************************
 *****************************************************/
 .main__image {
-  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
   height: 25.5rem;
+}
+
+.main__image-delice {
+  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.main__image-palette {
+  background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.main__image-enchantee {
+  background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.main__image-française {
+  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .menu {
@@ -482,6 +498,7 @@ p {
   margin: 2rem 0;
   cursor: pointer;
   position: relative;
+  animation: nuage 1300ms forwards;
 }
 .menu__card:hover .menu__card__right {
   width: 6rem;
@@ -490,6 +507,16 @@ p {
   transform: rotate(1turn);
 }
 
+@keyframes nuage {
+  from {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menu__card__right {
   height: 100%;
   border-top-right-radius: 1.5rem;
@@ -519,12 +546,12 @@ p {
   margin: 1rem 0;
 }
 .menu__card__left p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   margin: 0 1rem;
 }
 .menu__card__left .bold {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .menu__card__left .menu__card__price {
