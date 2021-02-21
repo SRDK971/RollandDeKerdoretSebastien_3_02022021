@@ -1,20 +1,20 @@
-@mixin tab-mini {
-    @media screen and (min-width: map-get($breakpoints, tab-mini)) {
+@mixin tab {
+    @media (min-width: map-get($breakpoints, tab)) {
         @content;
     }
 }
-@mixin tab-big {
-    @media screen and (min-width: map-get($breakpoints, tab-big)) {
+@mixin laptop {
+    @media (min-width: map-get($breakpoints, laptop)) {
         @content;
     }
 }
-@mixin desktop-mini {
-    @media screen and (min-width: map-get($breakpoints, desktop-mini)) {
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
-@mixin desktop-middle {
-    @media screen and (min-width: map-get($breakpoints, desktop-middle)) {
+@mixin desktop-large {
+    @media (min-width: map-get($breakpoints, desktop-large)) {
         @content;
     }
 }

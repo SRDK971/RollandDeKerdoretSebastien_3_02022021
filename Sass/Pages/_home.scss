@@ -1,3 +1,68 @@
+/****************** Loading spinner ******************/
+
+$num-letters: 8;
+$anim-dur: 1400ms;
+$anim-delay: $anim-dur / $num-letters;
+
+.load-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#9356dc, #ff79da);
+    z-index: 999;
+    animation: loader 100ms 3s both;
+}
+@keyframes loader {
+    0% {
+        transform: translateX(0);
+        opacity: (1);
+    }
+    70% {
+        opacity: (0);
+    }
+    100% {
+        transform: translateX(-99999px);
+    }
+}
+.load {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    span {
+        display: inline-block;
+        margin: 0 1px;
+        color: #fff;
+        font-family: "Shrikhand", cursive;
+        font-size: 30px;
+        @for $i from 0 through $num-letters {
+            &:nth-child(#{$i}) {
+                animation: opacity-text $anim-dur (#{$i/9}) + s 2 ease-in-out;
+            }
+        }
+        @include tab {
+            font-size: 100px;
+        }
+    }
+}
+
+@keyframes opacity-text {
+    0% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(1);
+    }
+}
+
 /*********************** SECTION: RECHERCHE **********************/
 .search {
     display: flex;
@@ -43,9 +108,10 @@
         margin: 2rem;
     }
     .value__info {
-        margin: 0 2.5rem 2rem 2.5rem;
+        margin: 0 1.5rem 2rem 1.5rem;
         text-align: center;
         color: gray;
+        font-size: 1.6rem;
     }
 }
 
@@ -66,11 +132,11 @@
         background-color: $primary;
         border-radius: 50%;
         color: #fff;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
         text-align: center;
         margin-left: -15px;
-        padding: 5px 3px 0 3px;
+        padding: 5px 3px 2px 3px;
     }
 }
 .op__card {
@@ -84,6 +150,15 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     &:hover {
         background-color: rgba(147, 86, 220, 0.1);
+        .op__card__icon__1 {
+            background-image: url("images/Icones/mobile-alt-solid-purple.png");
+        }
+        .op__card__icon__2 {
+            background-image: url("images/Icones/bars-solid-purple.png");
+        }
+        .op__card__icon__3 {
+            background-image: url("images/Icones/store-solid-purple.png");
+        }
     }
     .op__card__icon {
         background-size: 1.5rem;
@@ -91,7 +166,7 @@
         background-repeat: no-repeat;
         height: 3rem;
         width: 2rem;
-        margin: 0 2.5rem;
+        margin: 0 1.5rem;
     }
     .op__card__icon__1 {
         background-image: url("images/Icones/mobile-alt-solid-gray.png");
@@ -102,17 +177,6 @@
     .op__card__icon__3 {
         background-image: url("images/Icones/store-solid-gray.png");
         background-size: 2rem;
-    }
-}
-.op__card:hover {
-    .op__card__icon__1 {
-        background-image: url("images/Icones/mobile-alt-solid-purple.png");
-    }
-    .op__card__icon__2 {
-        background-image: url("images/Icones/bars-solid-purple.png");
-    }
-    .op__card__icon__3 {
-        background-image: url("images/Icones/store-solid-purple.png");
     }
 }
 
@@ -177,67 +241,5 @@
                 transform: scale(1);
             }
         }
-    }
-}
-
-/****************** Loading spinner ******************/
-
-$num-letters: 8;
-$anim-dur: 1400ms;
-$anim-delay: $anim-dur / $num-letters;
-
-.load-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#9356dc, #ff79da);
-    z-index: 999;
-    animation: loader 100ms 3s both;
-}
-@keyframes loader {
-    0% {
-        transform: translateX(0);
-        opacity: (1);
-    }
-    70% {
-        opacity: (0);
-    }
-    100% {
-        transform: translateX(-99999px);
-    }
-}
-.load {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    span {
-        display: inline-block;
-        margin: 0 1px;
-        color: #fff;
-        font-family: "Shrikhand", cursive;
-        font-size: 100px;
-        @for $i from 0 through $num-letters {
-            &:nth-child(#{$i}) {
-                animation: opacity-text $anim-dur (#{$i/9}) + s 2 ease-in-out;
-            }
-        }
-    }
-}
-
-@keyframes opacity-text {
-    0% {
-        filter: opacity(0);
-    }
-    100% {
-        filter: opacity(1);
     }
 }
