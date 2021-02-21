@@ -1,4 +1,5 @@
 // Colors
+
 $colors: (
     primary: #9356dc,
     secondary: #ff79da,
@@ -8,8 +9,7 @@ $colors: (
 // Breakpoints
 
 $breakpoints: (
-    tabs: 481px,
-    laptops: 769px,
-    desktops: 1025px,
-    desktops-large: 1280px,
+    tab: 600px,
+    laptop: 900px,
+    desktop: 1200px,
 );

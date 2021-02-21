@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+    @include for-desktop {
+        font-size: 11px;
+    }
 }
 body {
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 h1,
@@ -16,8 +19,4 @@ h2 {
 p {
     font-family: "Roboto", arial, sans-serif;
     font-size: 1.6rem;
-}
-
-.icon {
-    width: 1.5px;
 }

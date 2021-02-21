@@ -26,8 +26,8 @@
                 <span>d</span>
             </div>
         </div> -->
-        <header class="header">
-            <p class="header__left">
+        <header class="header header-home">
+            <p class="header__logo__container header__logo__container-home">
                 <img src="Sass/images/logo/ohmyfood.png" alt="ohmyfood logo" class="header__logo" />
             </p>
             <div class="search">
@@ -45,23 +45,23 @@
             <button class="btn" type="submit" value="submit" formtarget="_blank">Explorer nos restaurants</button>
         </section>
         <section class="op">
-            <div class="op__margin">
-                <h1>Fonctionnement</h1>
-                <div class="op__container">
+            <h1>Fonctionnement</h1>
+            <div class="op__container">
+                <div class="op__card__container">
                     <div class="op__card op__card__1">
                         <p class="op__number">1</p>
                         <div class="op__card__icon op__card__icon__1"></div>
                         <p class="op__card__title">Choisissez un restaurant</p>
                     </div>
                 </div>
-                <div class="op__container">
+                <div class="op__card__container">
                     <div class="op__card op__card__2">
                         <p class="op__number">2</p>
                         <div class="op__card__icon op__card__icon__2"></div>
                         <p class="op__card__title">Composez votre menu</p>
                     </div>
                 </div>
-                <div class="op__container">
+                <div class="op__card__container">
                     <div class="op__card op__card__3">
                         <p class="op__number">3</p>
                         <div class="op__card__icon op__card__icon__3"></div>
@@ -69,247 +69,243 @@
                     </div>
                 </div>
             </div>
+
             <div class="op__card__icon icon"></div>
         </section>
         <section class="resto">
-            <div class="resto__margin">
-                <h1>Restaurants</h1>
-                <div class="resto__container">
-                    <div class="resto__card">
-                        <a href="La palette du goût.html">
-                            <img
-                                class="resto__card__img"
-                                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            />
-                            <span class="resto__card__badge">Nouveau</span>
-                            <h1>La palette du goût</h1>
-                            <p class="resto__card__lieu">Ménilmontant</p>
-                            <div class="resto__card__heart">
-                                <svg
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    data-prefix="far"
-                                    data-icon="heart"
-                                    class="svg-inline--fa fa-heart fa-w-16 heart--empty"
-                                    role="img"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
-                                    ></path>
-                                </svg>
-                                <svg
-                                    id="Layer_1"
-                                    data-name="Layer 1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 512.01 448.01"
-                                    class="heart--full"
-                                >
-                                    <defs>
-                                        <style>
-                                            .cls-1 {
-                                                fill: url(#linear-gradient);
-                                            }
-                                        </style>
-                                        <linearGradient
-                                            id="linear-gradient"
-                                            x1="255.99"
-                                            y1="31.97"
-                                            x2="255.99"
-                                            y2="479.97"
-                                            gradientUnits="userSpaceOnUse"
-                                        >
-                                            <stop offset="0" stop-color="#96c" />
-                                            <stop offset="1" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path
-                                        class="cls-1"
-                                        d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
-                                        transform="translate(0.01 -31.97)"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="resto__card">
-                        <a href="La note enchantée.html">
-                            <img class="resto__card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
-                            <span class="resto__card__badge">Nouveau</span>
-                            <h1>La note enchantée</h1>
-                            <p class="resto__card__lieu">Charonne</p>
-                            <div class="resto__card__heart">
-                                <svg
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    data-prefix="far"
-                                    data-icon="heart"
-                                    class="svg-inline--fa fa-heart fa-w-16 heart--empty"
-                                    role="img"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
-                                    ></path>
-                                </svg>
-                                <svg
-                                    id="Layer_1"
-                                    data-name="Layer 1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 512.01 448.01"
-                                    class="heart--full"
-                                >
-                                    <defs>
-                                        <style>
-                                            .cls-1 {
-                                                fill: url(#linear-gradient);
-                                            }
-                                        </style>
-                                        <linearGradient
-                                            id="linear-gradient"
-                                            x1="255.99"
-                                            y1="31.97"
-                                            x2="255.99"
-                                            y2="479.97"
-                                            gradientUnits="userSpaceOnUse"
-                                        >
-                                            <stop offset="0" stop-color="#96c" />
-                                            <stop offset="1" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path
-                                        class="cls-1"
-                                        d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
-                                        transform="translate(0.01 -31.97)"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="resto__card">
-                        <a href="À la française.html">
-                            <img
-                                class="resto__card__img"
-                                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            />
-                            <h1>À la française</h1>
-                            <p class="resto__card__lieu">Cité Rouge</p>
-                            <div class="resto__card__heart">
-                                <svg
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    data-prefix="far"
-                                    data-icon="heart"
-                                    class="svg-inline--fa fa-heart fa-w-16 heart--empty"
-                                    role="img"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
-                                    ></path>
-                                </svg>
-                                <svg
-                                    id="Layer_1"
-                                    data-name="Layer 1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 512.01 448.01"
-                                    class="heart--full"
-                                >
-                                    <defs>
-                                        <style>
-                                            .cls-1 {
-                                                fill: url(#linear-gradient);
-                                            }
-                                        </style>
-                                        <linearGradient
-                                            id="linear-gradient"
-                                            x1="255.99"
-                                            y1="31.97"
-                                            x2="255.99"
-                                            y2="479.97"
-                                            gradientUnits="userSpaceOnUse"
-                                        >
-                                            <stop offset="0" stop-color="#96c" />
-                                            <stop offset="1" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path
-                                        class="cls-1"
-                                        d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
-                                        transform="translate(0.01 -31.97)"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="resto__card">
-                        <a href="Le delice des sens.html">
-                            <img
-                                class="resto__card__img"
-                                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            />
-                            <h1>Le délice des sens</h1>
-                            <p class="resto__card__lieu">Folie-Méricourt</p>
-                            <div class="resto__card__heart">
-                                <svg
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    data-prefix="far"
-                                    data-icon="heart"
-                                    class="svg-inline--fa fa-heart fa-w-16 heart--empty"
-                                    role="img"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
-                                >
-                                    <path
-                                        fill="currentColor"
-                                        d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
-                                    ></path>
-                                </svg>
-                                <svg
-                                    id="Layer_1"
-                                    data-name="Layer 1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 512.01 448.01"
-                                    class="heart--full"
-                                >
-                                    <defs>
-                                        <style>
-                                            .cls-1 {
-                                                fill: url(#linear-gradient);
-                                            }
-                                        </style>
-                                        <linearGradient
-                                            id="linear-gradient"
-                                            x1="255.99"
-                                            y1="31.97"
-                                            x2="255.99"
-                                            y2="479.97"
-                                            gradientUnits="userSpaceOnUse"
-                                        >
-                                            <stop offset="0" stop-color="#96c" />
-                                            <stop offset="1" stop-color="#ff79da" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path
-                                        class="cls-1"
-                                        d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
-                                        transform="translate(0.01 -31.97)"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
+            <h1>Restaurants</h1>
+            <div class="resto__container">
+                <div class="resto__card">
+                    <a href="La palette du goût.html">
+                        <img
+                            class="resto__card__img"
+                            src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        />
+                        <span class="resto__card__badge">Nouveau</span>
+                        <h1>La palette du goût</h1>
+                        <p class="resto__card__lieu">Ménilmontant</p>
+                        <div class="resto__card__heart">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="far"
+                                data-icon="heart"
+                                class="svg-inline--fa fa-heart fa-w-16 heart--empty"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                                ></path>
+                            </svg>
+                            <svg
+                                id="Layer_1"
+                                data-name="Layer 1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512.01 448.01"
+                                class="heart--full"
+                            >
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: url(#linear-gradient);
+                                        }
+                                    </style>
+                                    <linearGradient
+                                        id="linear-gradient"
+                                        x1="255.99"
+                                        y1="31.97"
+                                        x2="255.99"
+                                        y2="479.97"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop offset="0" stop-color="#96c" />
+                                        <stop offset="1" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    class="cls-1"
+                                    d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
+                                    transform="translate(0.01 -31.97)"
+                                />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="resto__card">
+                    <a href="La note enchantée.html">
+                        <img class="resto__card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
+                        <span class="resto__card__badge">Nouveau</span>
+                        <h1>La note enchantée</h1>
+                        <p class="resto__card__lieu">Charonne</p>
+                        <div class="resto__card__heart">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="far"
+                                data-icon="heart"
+                                class="svg-inline--fa fa-heart fa-w-16 heart--empty"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                                ></path>
+                            </svg>
+                            <svg
+                                id="Layer_1"
+                                data-name="Layer 1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512.01 448.01"
+                                class="heart--full"
+                            >
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: url(#linear-gradient);
+                                        }
+                                    </style>
+                                    <linearGradient
+                                        id="linear-gradient"
+                                        x1="255.99"
+                                        y1="31.97"
+                                        x2="255.99"
+                                        y2="479.97"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop offset="0" stop-color="#96c" />
+                                        <stop offset="1" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    class="cls-1"
+                                    d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
+                                    transform="translate(0.01 -31.97)"
+                                />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="resto__card">
+                    <a href="À la française.html">
+                        <img class="resto__card__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+                        <h1>À la française</h1>
+                        <p class="resto__card__lieu">Cité Rouge</p>
+                        <div class="resto__card__heart">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="far"
+                                data-icon="heart"
+                                class="svg-inline--fa fa-heart fa-w-16 heart--empty"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                                ></path>
+                            </svg>
+                            <svg
+                                id="Layer_1"
+                                data-name="Layer 1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512.01 448.01"
+                                class="heart--full"
+                            >
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: url(#linear-gradient);
+                                        }
+                                    </style>
+                                    <linearGradient
+                                        id="linear-gradient"
+                                        x1="255.99"
+                                        y1="31.97"
+                                        x2="255.99"
+                                        y2="479.97"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop offset="0" stop-color="#96c" />
+                                        <stop offset="1" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    class="cls-1"
+                                    d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
+                                    transform="translate(0.01 -31.97)"
+                                />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="resto__card">
+                    <a href="Le delice des sens.html">
+                        <img
+                            class="resto__card__img"
+                            src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        />
+                        <h1>Le délice des sens</h1>
+                        <p class="resto__card__lieu">Folie-Méricourt</p>
+                        <div class="resto__card__heart">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="far"
+                                data-icon="heart"
+                                class="svg-inline--fa fa-heart fa-w-16 heart--empty"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                                ></path>
+                            </svg>
+                            <svg
+                                id="Layer_1"
+                                data-name="Layer 1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512.01 448.01"
+                                class="heart--full"
+                            >
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: url(#linear-gradient);
+                                        }
+                                    </style>
+                                    <linearGradient
+                                        id="linear-gradient"
+                                        x1="255.99"
+                                        y1="31.97"
+                                        x2="255.99"
+                                        y2="479.97"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop offset="0" stop-color="#96c" />
+                                        <stop offset="1" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    class="cls-1"
+                                    d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
+                                    transform="translate(0.01 -31.97)"
+                                />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

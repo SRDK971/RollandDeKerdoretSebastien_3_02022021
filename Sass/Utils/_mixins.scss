@@ -1,20 +1,15 @@
-@mixin tab {
+@mixin for-tab {
     @media (min-width: map-get($breakpoints, tab)) {
         @content;
     }
 }
-@mixin laptop {
+@mixin for-laptop {
     @media (min-width: map-get($breakpoints, laptop)) {
         @content;
     }
 }
-@mixin desktop {
+@mixin for-desktop {
     @media (min-width: map-get($breakpoints, desktop)) {
-        @content;
-    }
-}
-@mixin desktop-large {
-    @media (min-width: map-get($breakpoints, desktop-large)) {
         @content;
     }
 }

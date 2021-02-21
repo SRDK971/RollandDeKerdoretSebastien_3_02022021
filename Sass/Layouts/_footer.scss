@@ -5,13 +5,27 @@
 
 .footer__container {
     margin: 2rem 0 0 2rem;
+    @include for-tab {
+        margin: 2rem 4rem 0 4rem;
+    }
+    @include for-laptop {
+        margin: 2rem 10rem 0 5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .footer__logo {
         margin: 2.5rem 0;
         width: 10rem;
+        @include for-tab {
+            margin: 2.5rem 100% 2.5rem 0;
+        }
     }
     p {
         color: #fff;
         line-height: 2.4rem;
+        @include for-tab {
+            margin-right: auto;
+        }
     }
     .footer__icon {
         background-repeat: no-repeat;
