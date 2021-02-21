@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+h1,
+h2 {
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 2.8rem;
+}
+p {
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+.icon {
+    width: 1.5rem;
+}

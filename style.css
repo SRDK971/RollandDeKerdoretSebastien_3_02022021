@@ -1,11 +1,8 @@
 @charset "UTF-8";
-/*********************** GENERAL **********************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Shrikhand", cursive;
-  font-family: "Roboto", arial, sans-serif;
   font-size: 10px;
 }
 
@@ -29,12 +26,71 @@ p {
   width: 1.5rem;
 }
 
-/****************************************************
-*****************************************************
-*********************** ACCUEIL *********************
-*****************************************************
-*****************************************************/
-/*********************** HEADER *********************/
+* {
+  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", arial, sans-serif;
+}
+
+.btn {
+  display: block;
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  margin: 1rem auto 3rem auto;
+  align-content: center;
+  border-radius: 20rem;
+  border-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  transform: opacity;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top left, #965add, #ff88de);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  color: #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms;
+  border-radius: 20rem;
+}
+
+.heart--empty {
+  width: 25px;
+  height: 25px;
+  transition-property: opacity;
+  transition-duration: 1500ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.heart--full {
+  font-size: 50px;
+  width: 25px;
+  height: 26px;
+  position: relative;
+  top: -2.8rem;
+  opacity: 0;
+  transform: scale(0.3);
+  transform-origin: bottom;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+}
+
 .header .header__left {
   width: 16.3rem;
   margin: 2.5rem auto 1.5rem auto;
@@ -56,6 +112,38 @@ p {
   margin-left: 2rem;
 }
 
+.footer {
+  background-color: #343434;
+  padding-bottom: 3rem;
+}
+
+.footer__container {
+  margin: 2rem 0 0 2rem;
+}
+.footer__container .footer__logo {
+  margin: 2.5rem 0;
+  width: 10rem;
+}
+.footer__container p {
+  color: #fff;
+  line-height: 2.4rem;
+}
+.footer__container .footer__icon {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1rem 1.5rem;
+  padding-left: 2rem;
+}
+
+.footer__icon__ustensils {
+  background-image: url("images/Icones/utensils-solid-white.png");
+}
+
+.footer__icon__hands {
+  background-image: url("images/Icones/hands-helping-solid-white.png");
+}
+
+/*********************** SECTION: RECHERCHE **********************/
 .search {
   display: flex;
   justify-content: center;
@@ -104,42 +192,6 @@ p {
   margin: 0 2.5rem 2rem 2.5rem;
   text-align: center;
   color: gray;
-}
-
-.btn {
-  display: block;
-  background: linear-gradient(to top left, #9356dc, #ff79da);
-  color: #fff;
-  padding: 1.5rem 2.5rem;
-  margin: 1rem auto 3rem auto;
-  align-content: center;
-  border-radius: 20rem;
-  border-style: none;
-  font-size: 2rem;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
-  transform: opacity;
-}
-.btn:hover::after {
-  opacity: 1;
-}
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top left, #965add, #ff88de);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  color: #fff;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 100ms;
-  border-radius: 20rem;
 }
 
 /*********************** SECTION: OPERATION **********************/
@@ -271,30 +323,6 @@ p {
   transform: scale(1);
 }
 
-.heart--empty {
-  width: 25px;
-  height: 25px;
-  transition-property: opacity;
-  transition-duration: 1500ms;
-  transition-delay: 0s;
-  transition-timing-function: ease-in-out;
-}
-
-.heart--full {
-  font-size: 50px;
-  width: 25px;
-  height: 26px;
-  position: relative;
-  top: -2.8rem;
-  opacity: 0;
-  transform: scale(0.3);
-  transform-origin: bottom;
-  transition-property: transform, opacity;
-  transition-duration: 500ms;
-  transition-delay: 0s;
-  transition-timing-function: ease-in;
-}
-
 /****************** Loading spinner ******************/
 .load-wrapper {
   position: fixed;
@@ -374,43 +402,6 @@ p {
     filter: opacity(1);
   }
 }
-/*********************** FOOTER **********************/
-.footer {
-  background-color: #343434;
-  padding-bottom: 3rem;
-}
-
-.footer__container {
-  margin: 2rem 0 0 2rem;
-}
-.footer__container .footer__logo {
-  margin: 2.5rem 0;
-  width: 10rem;
-}
-.footer__container p {
-  color: #fff;
-  line-height: 2.4rem;
-}
-.footer__container .footer__icon {
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 1rem 1.5rem;
-  padding-left: 2rem;
-}
-
-.footer__icon__ustensils {
-  background-image: url("images/Icones/utensils-solid-white.png");
-}
-
-.footer__icon__hands {
-  background-image: url("images/Icones/hands-helping-solid-white.png");
-}
-
-/****************************************************
-*****************************************************
-*********************** RESTO PAGES *****************
-*****************************************************
-*****************************************************/
 .main__image {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -466,8 +457,7 @@ p {
   opacity: 1;
   transform: scale(1);
 }
-
-.heart__icon--full {
+.menu__title .heart__icon--full {
   top: 0;
   right: 2.75rem;
 }

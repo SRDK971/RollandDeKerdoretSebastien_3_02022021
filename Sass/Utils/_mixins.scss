@@ -1,0 +1,20 @@
+@mixin tab-mini {
+    @media screen and (min-width: map-get($breakpoints, tab-mini)) {
+        @content;
+    }
+}
+@mixin tab-big {
+    @media screen and (min-width: map-get($breakpoints, tab-big)) {
+        @content;
+    }
+}
+@mixin desktop-mini {
+    @media screen and (min-width: map-get($breakpoints, desktop-mini)) {
+        @content;
+    }
+}
+@mixin desktop-middle {
+    @media screen and (min-width: map-get($breakpoints, desktop-middle)) {
+        @content;
+    }
+}

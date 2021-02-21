@@ -1,0 +1,28 @@
+.footer {
+    background-color: #343434;
+    padding-bottom: 3rem;
+}
+
+.footer__container {
+    margin: 2rem 0 0 2rem;
+    .footer__logo {
+        margin: 2.5rem 0;
+        width: 10rem;
+    }
+    p {
+        color: #fff;
+        line-height: 2.4rem;
+    }
+    .footer__icon {
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1rem 1.5rem;
+        padding-left: 2rem;
+    }
+}
+.footer__icon__ustensils {
+    background-image: url("images/Icones/utensils-solid-white.png");
+}
+.footer__icon__hands {
+    background-image: url("images/Icones/hands-helping-solid-white.png");
+}
