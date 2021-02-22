@@ -17,6 +17,9 @@
         top: 2.5rem;
         margin-right: auto;
         margin-left: 2rem;
+        @include for-tab {
+            left: 4rem;
+        }
         @include for-laptop {
             left: 5rem;
         }
