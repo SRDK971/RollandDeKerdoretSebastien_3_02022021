@@ -160,3 +160,68 @@
         margin: 0 2rem 0.4rem 0;
     }
 }
+.resto__btn {
+    @include for-laptop {
+        display: none;
+    }
+}
+
+/* PANIER */
+.wrapper {
+    @include for-laptop {
+        display: flex;
+        position: relative;
+    }
+    .main {
+        @include for-laptop {
+            width: calc(100% - 30rem);
+        }
+    }
+}
+.panier {
+    display: none;
+    @include for-laptop {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 30rem;
+        background-color: color(bg_color);
+        box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    }
+    .panier__container {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 31vw; /* viewport width */
+        height: 100vh; /* viewport height */
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .panier__title {
+        margin-left: 10.5rem;
+        margin-top: 9rem;
+    }
+    .fa-shopping-basket {
+        height: 2.5rem;
+        margin: 2.5rem auto 2.5rem 13.5rem;
+        display: block;
+    }
+    .panier__info {
+        margin-left: 1.5rem;
+    }
+    .panier__commande {
+        display: flex;
+        justify-content: space-between;
+        width: calc(30rem - 4.5rem);
+        margin: 3rem 0 5rem 1.5rem;
+        .panier__price {
+            font-weight: bold;
+        }
+    }
+    .panier__btn {
+        margin-left: 7rem;
+    }
+}
