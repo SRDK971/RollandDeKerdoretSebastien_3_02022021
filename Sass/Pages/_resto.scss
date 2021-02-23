@@ -224,11 +224,18 @@
     }
     .fa-shopping-basket {
         height: 2.5rem;
-        margin: 2.5rem auto 2.5rem 13.5rem;
-        display: block;
+        width: 2.5rem;
+        margin: 3rem 13.5rem;
     }
     .panier__info {
         margin-left: 1.5rem;
+    }
+    .panier__line {
+        border-bottom: 1px solid;
+        border-color: $icon-color;
+        width: 28rem;
+        margin: 3rem auto 1rem 1rem;
+        display: block;
     }
     .panier__commande {
         display: flex;

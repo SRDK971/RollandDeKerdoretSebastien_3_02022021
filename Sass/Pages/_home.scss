@@ -81,8 +81,12 @@ $anim-delay: $anim-dur / $num-letters;
 .icon {
     width: 15px;
 }
-.search__icon {
-    margin: 0 1rem 0 0;
+.fa-map-marker-alt {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
 }
 .search__place {
     width: 15rem;
@@ -99,7 +103,7 @@ $anim-delay: $anim-dur / $num-letters;
         &::placeholder {
             color: #111;
             opacity: 1;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
         }
     }
 }
@@ -181,33 +185,20 @@ $anim-delay: $anim-dur / $num-letters;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     &:hover {
         background-color: rgba(147, 86, 220, 0.1);
-        .op__card__icon__1 {
-            background-image: url("images/Icones/mobile-alt-solid-purple.png");
-        }
-        .op__card__icon__2 {
-            background-image: url("images/Icones/bars-solid-purple.png");
-        }
-        .op__card__icon__3 {
-            background-image: url("images/Icones/store-solid-purple.png");
+        .fa-mobile-alt,
+        .fa-store,
+        .fa-bars {
+            color: color(primary);
         }
     }
-    .op__card__icon {
-        background-size: 1.5rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 3rem;
+    .fa-mobile-alt,
+    .fa-store,
+    .fa-bars {
+        font-size: 1.5rem;
+        height: 2rem;
         width: 2rem;
         margin: 0 1.5rem;
-    }
-    .op__card__icon__1 {
-        background-image: url("images/Icones/mobile-alt-solid-gray.png");
-    }
-    .op__card__icon__2 {
-        background-image: url("images/Icones/bars-solid-gray.png");
-    }
-    .op__card__icon__3 {
-        background-image: url("images/Icones/store-solid-gray.png");
-        background-size: 2rem;
+        color: color(icon-color);
     }
 }
 .op__container {
@@ -281,8 +272,9 @@ $anim-delay: $anim-dur / $num-letters;
         right: 2rem;
         font-size: 1.4rem;
     }
-    h1 {
+    figcaption {
         font-size: 2rem;
+        font-weight: bold;
         margin: 1rem auto 0.5rem 1.5rem;
     }
     .resto__card__lieu {
