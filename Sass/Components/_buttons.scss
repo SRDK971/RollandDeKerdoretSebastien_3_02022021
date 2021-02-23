@@ -34,3 +34,8 @@
         border-radius: 20rem;
     }
 }
+.resto__btn {
+    @include for-laptop {
+        display: none;
+    }
+}

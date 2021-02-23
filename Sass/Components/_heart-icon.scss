@@ -1,6 +1,7 @@
 .heart--empty {
     width: 25px;
     height: 25px;
+    font-size: 25px;
     transition-property: opacity;
     transition-duration: 1500ms;
     transition-delay: 0s;
@@ -9,9 +10,9 @@
 .heart--full {
     font-size: 50px;
     width: 25px;
-    height: 26px;
+    height: 25px;
     position: relative;
-    top: -2.8rem;
+    top: -2.3rem;
     opacity: 0;
     transform: scale(0.3);
     transform-origin: bottom;

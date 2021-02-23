@@ -67,9 +67,16 @@ p {
   border-radius: 20rem;
 }
 
+@media (min-width: 900px) {
+  .resto__btn {
+    display: none;
+  }
+}
+
 .heart--empty {
   width: 25px;
   height: 25px;
+  font-size: 25px;
   transition-property: opacity;
   transition-duration: 1500ms;
   transition-delay: 0s;
@@ -79,9 +86,9 @@ p {
 .heart--full {
   font-size: 50px;
   width: 25px;
-  height: 26px;
+  height: 25px;
   position: relative;
-  top: -2.8rem;
+  top: -2.3rem;
   opacity: 0;
   transform: scale(0.3);
   transform-origin: bottom;
@@ -89,6 +96,163 @@ p {
   transition-duration: 500ms;
   transition-delay: 0s;
   transition-timing-function: ease-in;
+}
+
+/*********************** ACCUEIL, SECTION: RESTAURANT **********************/
+.resto__card {
+  width: 100%;
+  height: 25rem;
+  border-radius: 1.5rem;
+  position: relative;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.resto__card > * {
+  text-decoration: none;
+  color: initial;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 600px) {
+  .resto__card {
+    margin: 2rem;
+    height: 28rem;
+  }
+}
+@media (min-width: 600px) {
+  .resto__card {
+    width: 60%;
+    margin: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .resto__card {
+    width: 40%;
+  }
+}
+.resto__card img {
+  width: 100%;
+  height: 17.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+@media (min-width: 600px) {
+  .resto__card img {
+    height: 20.5rem;
+  }
+}
+.resto__card .resto__card__badge {
+  color: #018765;
+  background-color: #99e2d0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.4rem;
+}
+.resto__card figcaption {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem auto 0.5rem 1.5rem;
+}
+.resto__card .resto__card__lieu {
+  margin: 0 1.5rem;
+}
+.resto__card .resto__card__heart {
+  position: absolute;
+  height: 3.1rem;
+  width: 2.7rem;
+  right: 2.5rem;
+  bottom: 1.7rem;
+}
+.resto__card .resto__card__heart:hover .heart--empty {
+  opacity: 0;
+}
+.resto__card .resto__card__heart:hover .heart--full {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*********************** RESTAURANT, SECTION: MENU **********************/
+.menu__card {
+  box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  display: flex;
+  height: 7rem;
+  width: 100%;
+  transition: transform 5s;
+  margin: 2rem 0;
+  cursor: pointer;
+  position: relative;
+  animation: nuage 1300ms forwards;
+}
+.menu__card:hover .menu__card__right {
+  width: 6rem;
+}
+.menu__card:hover .fa-check-circle {
+  transform: rotate(1turn);
+  opacity: 1;
+}
+
+@keyframes nuage {
+  from {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu__card__right {
+  height: 100%;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  background-color: #99e2d0;
+  width: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__card__right .fa-check-circle {
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(0turn);
+  transition: transform 1000ms;
+  opacity: 0;
+}
+
+.menu__card__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__card__left .menu__card__text {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 0 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__left .bold {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.menu__card__left .menu__card__price {
+  position: relative;
+  right: 1.2rem;
+  bottom: -0.4rem;
 }
 
 .header {
@@ -634,7 +798,7 @@ p {
 }
 .menu__title .heart__icon {
   position: relative;
-  margin-right: 0rem;
+  margin-right: 0;
 }
 .menu__title .heart__icon:hover .heart--empty {
   opacity: 0;
@@ -644,8 +808,8 @@ p {
   transform: scale(1);
 }
 .menu__title .heart__icon--full {
-  top: 0;
-  right: 2.75rem;
+  top: 4px;
+  right: 27px;
 }
 
 .menu__subcategories {
@@ -662,89 +826,6 @@ p {
   display: block;
   width: 4rem;
   margin-left: 0.5rem;
-}
-
-.menu__card {
-  box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 1.5rem;
-  display: flex;
-  height: 7rem;
-  width: 100%;
-  transition: transform 5s;
-  margin: 2rem 0;
-  cursor: pointer;
-  position: relative;
-  animation: nuage 1300ms forwards;
-}
-.menu__card:hover .menu__card__right {
-  width: 6rem;
-}
-.menu__card:hover .fa-check-circle {
-  transform: rotate(1turn);
-}
-
-@keyframes nuage {
-  from {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.menu__card__right {
-  height: 100%;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-  transition-property: all;
-  transition-duration: 300ms;
-  background-color: #99e2d0;
-  width: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu__card__right .fa-check-circle {
-  color: #fff;
-  width: 2.5rem;
-  height: 2.5rem;
-  transform: rotate(0turn);
-  transition: transform 1000ms;
-}
-
-.menu__card__left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 1rem 0;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.menu__card__left .menu__card__text {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  margin: 0 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__card__left .bold {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.menu__card__left .menu__card__price {
-  position: relative;
-  right: 1.2rem;
-  bottom: -0.4rem;
-}
-
-@media (min-width: 900px) {
-  .resto__btn {
-    display: none;
-  }
 }
 
 /* PANIER */
