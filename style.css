@@ -16,10 +16,6 @@ body {
   margin: 0 auto;
 }
 
-.main {
-  width: 100%;
-}
-
 h1,
 h2 {
   font-family: "Roboto", arial, sans-serif;
@@ -149,6 +145,11 @@ p {
   background-color: #343434;
   padding-bottom: 3rem;
 }
+@media (min-width: 900px) {
+  .footer {
+    padding-bottom: 6rem;
+  }
+}
 
 .footer__container {
   margin: 2rem 0 0 2rem;
@@ -171,7 +172,7 @@ p {
 }
 @media (min-width: 600px) {
   .footer__container .footer__logo {
-    margin: 2.5rem 50rem 2.5rem 0;
+    margin: 2.5rem 40rem 2.5rem 0;
   }
 }
 @media (min-width: 900px) {
@@ -559,18 +560,31 @@ p {
   background-size: 100%;
   width: 100%;
   height: 25.5rem;
+  margin-bottom: -8rem;
+}
+@media (min-width: 400px) {
+  .main__image {
+    height: 32rem;
+    margin-bottom: -6rem;
+  }
 }
 @media (min-width: 600px) {
   .main__image {
     margin: 0 4rem;
     width: auto;
     border-radius: 1rem;
+    height: 40rem;
   }
 }
 @media (min-width: 900px) {
   .main__image {
     margin: 0 5rem;
-    width: auto;
+    height: 50rem;
+  }
+}
+@media (min-width: 1200px) {
+  .main__image {
+    height: 60rem;
   }
 }
 
@@ -593,7 +607,6 @@ p {
 .menu {
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
-  margin-top: -17%;
   background-color: #fff;
 }
 @media (min-width: 600px) {
@@ -776,11 +789,11 @@ p {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 31vw;
+  width: 30rem;
   /* viewport width */
   height: 100vh;
   /* viewport height */
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 .panier .panier__title {

@@ -1,3 +1,8 @@
+@mixin for-mobile {
+    @media (min-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
 @mixin for-tab {
     @media (min-width: map-get($breakpoints, tab)) {
         @content;

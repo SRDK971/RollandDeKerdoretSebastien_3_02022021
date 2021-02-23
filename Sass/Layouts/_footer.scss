@@ -1,6 +1,9 @@
 .footer {
     background-color: #343434;
     padding-bottom: 3rem;
+    @include for-laptop {
+        padding-bottom: 6rem;
+    }
 }
 
 .footer__container {
@@ -17,7 +20,7 @@
         margin: 2.5rem 0;
         width: 10rem;
         @include for-tab {
-            margin: 2.5rem 50rem 2.5rem 0;
+            margin: 2.5rem 40rem 2.5rem 0;
         }
         @include for-laptop {
             margin: 2.5rem 100rem 2.5rem 0;
