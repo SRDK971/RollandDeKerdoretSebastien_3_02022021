@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -634,141 +633,42 @@ p {
   width: 100%;
 }
 
-.resto__card {
+.main__img {
   width: 100%;
   height: 25rem;
-  border-radius: 1.5rem;
+  z-index: 2;
   position: relative;
-  margin: 2rem 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-}
-.resto__card > * {
-  text-decoration: none;
-  color: initial;
-  display: block;
-  width: 100%;
-  height: 100%;
+  margin-bottom: -5rem;
 }
 @media (min-width: 600px) {
-  .resto__card {
-    margin: 2rem;
-    height: 28rem;
-  }
-}
-@media (min-width: 600px) {
-  .resto__card {
-    width: 60%;
-    margin: 2rem;
+  .main__img {
+    margin: 0 9%;
+    width: 80%;
+    border-radius: 1rem;
+    height: 30rem;
+    position: static;
   }
 }
 @media (min-width: 900px) {
-  .resto__card {
-    width: 40%;
-  }
-}
-.resto__card img {
-  width: 100%;
-  height: 17.5rem;
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-}
-@media (min-width: 600px) {
-  .resto__card img {
-    height: 20.5rem;
-  }
-}
-.resto__card .resto__card__badge {
-  color: #018765;
-  background-color: #99e2d0;
-  padding: 1rem 1.5rem;
-  border-radius: 0.2rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 1.4rem;
-}
-.resto__card figcaption {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem auto 0.5rem 1.5rem;
-}
-.resto__card .resto__card__lieu {
-  margin: 0 1.5rem;
-}
-.resto__card .resto__card__heart {
-  position: absolute;
-  height: 3.1rem;
-  width: 2.7rem;
-  right: 2.5rem;
-  bottom: 1.7rem;
-}
-.resto__card .resto__card__heart:hover .heart--empty {
-  opacity: 0;
-}
-.resto__card .resto__card__heart:hover .heart--full {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.main__image {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 25.5rem;
-  margin-bottom: -8rem;
-}
-@media (min-width: 400px) {
-  .main__image {
-    height: 32rem;
-    margin-bottom: -6rem;
-  }
-}
-@media (min-width: 600px) {
-  .main__image {
-    margin: 0 4rem;
-    width: auto;
+  .main__img {
+    margin-left: 10%;
     border-radius: 1rem;
     height: 40rem;
   }
-}
-@media (min-width: 900px) {
-  .main__image {
-    margin: 0 5rem;
-    height: 50rem;
-  }
-}
-@media (min-width: 1200px) {
-  .main__image {
-    height: 60rem;
-  }
-}
-
-.main__image-delice {
-  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-
-.main__image-palette {
-  background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-
-.main__image-enchantee {
-  background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-
-.main__image-française {
-  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .menu {
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
+  z-index: 3;
+  position: relative;
   background-color: #fff;
 }
 @media (min-width: 600px) {
   .menu {
     margin: 2rem 4rem;
-    width: auto;
     border-radius: 1rem;
+    position: static;
   }
 }
 @media (min-width: 900px) {
@@ -828,7 +728,7 @@ p {
   margin-left: 0.5rem;
 }
 
-/* PANIER */
+/*********************** SECTION PANIER *****************************/
 @media (min-width: 900px) {
   .wrapper {
     display: flex;
@@ -862,9 +762,7 @@ p {
   top: 0;
   bottom: 0;
   width: 30rem;
-  /* viewport width */
   height: 100vh;
-  /* viewport height */
   overflow-y: hidden;
   overflow-x: hidden;
 }

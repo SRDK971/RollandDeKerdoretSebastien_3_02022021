@@ -1,52 +1,33 @@
-.main__image {
-    background-repeat: no-repeat;
-    background-size: 100%;
+.main__img {
     width: 100%;
-    height: 25.5rem;
-    margin-bottom: -8rem;
-    @include for-mobile {
-        height: 32rem;
-        margin-bottom: -6rem;
-    }
+    height: 25rem;
+    z-index: 2;
+    position: relative;
+    margin-bottom: -5rem;
     @include for-tab {
-        margin: 0 4rem;
-        width: auto;
+        margin: 0 9%;
+        width: 80%;
+        border-radius: 1rem;
+        height: 30rem;
+        position: static;
+    }
+    @include for-laptop {
+        margin-left: 10%;
         border-radius: 1rem;
         height: 40rem;
     }
-    @include for-laptop {
-        margin: 0 5rem;
-        height: 50rem;
-    }
-    @include for-desktop {
-        height: 60rem;
-    }
-}
-.main__image-delice {
-    background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-.main__image-palette {
-    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-.main__image-enchantee {
-    background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-.main__image-française {
-    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .menu {
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
-    // margin-top: -17%;
+    z-index: 3;
+    position: relative;
     background-color: #fff;
-    // @include for-mobile {
-    //     margin-top: -30%;
-    // }
     @include for-tab {
         margin: 2rem 4rem;
-        width: auto;
         border-radius: 1rem;
+        position: static;
     }
     @include for-laptop {
         margin: 2rem 5rem;
@@ -102,7 +83,7 @@
     }
 }
 
-/* PANIER */
+/*********************** SECTION PANIER *****************************/
 .wrapper {
     @include for-laptop {
         display: flex;
@@ -131,8 +112,8 @@
         position: fixed;
         top: 0;
         bottom: 0;
-        width: 30rem; /* viewport width */
-        height: 100vh; /* viewport height */
+        width: 30rem;
+        height: 100vh;
         overflow-y: hidden;
         overflow-x: hidden;
     }
