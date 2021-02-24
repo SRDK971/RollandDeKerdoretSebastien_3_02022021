@@ -34,6 +34,9 @@
         border-radius: 20rem;
     }
 }
+
+/*********************** PAGE RESTAURANT *****************************/
+
 .resto__btn {
     @include for-laptop {
         display: none;

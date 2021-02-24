@@ -1,3 +1,5 @@
+// BREAKPOINTS
+
 @mixin for-mobile {
     @media (min-width: map-get($breakpoints, mobile)) {
         @content;

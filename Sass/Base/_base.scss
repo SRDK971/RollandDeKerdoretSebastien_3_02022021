@@ -11,6 +11,17 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
+.wrapper {
+    @include for-laptop {
+        display: flex;
+        position: relative;
+    }
+    .main {
+        @include for-laptop {
+            width: calc(100% - 30rem);
+        }
+    }
+}
 h1,
 h2 {
     font-family: "Roboto", arial, sans-serif;
